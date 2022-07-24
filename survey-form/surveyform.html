@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <fieldset>
+
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" required placeholder="Enter your name">
+
+
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+
+
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" id="number" min="13" max="130" placeholder="Age">
+
+            </fieldset>
+            <fieldset>
+                <p class="question">Which option best describes your current role?</p>
+                <select id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="nottosay">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <p class="question">Would you recommend freeCodeCamp to a friend?</p>
+                <!-- <legend class="question">Would you recommend freeCodeCamp to a friend?</legend> -->
+                <article>
+                    <input type="radio" name="recommendation" id="rddef" checked value="def">
+                    <label for="rddef"> Definetly</label>
+                </article>
+                <article>
+                    <input type="radio" name="recommendation" id="rdmaybe" value="maybe">
+                    <label for="rdmaybe"> Maybe</label>
+                </article>
+                <article>
+                    <input type="radio" name="recommendation" id="rdnotsure" value="not">
+                    <label for="rdnotsure"> Not sure</label>
+                </article>
+
+                <p class="question">What would you like to see improved? <span>(Check all that apply)</span></p>
+                <article>
+                    <input type="checkbox" value="frontend" id="checkfront">
+                    <label for="checkfront"> Frond-end Projects</label>
+                </article>
+                <article>
+                    <input type="checkbox" value="backend" id="checkback">
+                    <label for="checkback"> Back-end Projects</label>
+                </article>
+                <article>
+                    <input type="checkbox" value="Data" id="checkdata">
+                    <label for="checkdata"> Data Visualization</label>
+                </article>
+                <article>
+                    <input type="checkbox" value="challenges" id="checkchallenges">
+                    <label for="checkchallenges"> Challenges</label>
+                </article>
+                <article>
+                    <input type="checkbox" value="opensource" id="checkopen">
+                    <label for="checkopen"> Open Source Community</label>
+                </article>
+                <p class="question">Any comments or suggestions?</p>
+                <textarea placeholder="Enter your comments here..." rows="5" cols="50" value="text"></textarea>
+            </fieldset>
+            <button id="submit">Submit</submit>
+
+
+        </form>
+    </main>
+</body>
+
+</html>

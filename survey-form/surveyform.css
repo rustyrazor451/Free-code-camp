@@ -1,0 +1,86 @@
+body {
+    background-color: #264653;
+
+}
+
+label,
+.question {
+    display: inline-block;
+    color: #fefae0;
+}
+
+form {
+    margin: auto;
+    width: 40%;
+    padding-bottom: 2px;
+
+    border: 2px solid #2a9d8f;
+    background-color: #2a9d8f;
+
+}
+
+fieldset {
+    border: none;
+}
+
+
+label[for="name"],
+label[for="email"],
+label[for="number"] {
+    display: block;
+
+}
+
+label {
+    font-size: 20px;
+}
+
+.question {
+    font-size: 20px;
+    display: block;
+
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.5);
+
+}
+
+span {
+    font-size: 18px;
+}
+
+select {
+    width: 101.5%;
+    display: block;
+    margin-top: 0.4%;
+    padding-right: 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    margin: 0.4% 0 1% 0;
+}
+
+
+h1,
+#description {
+    color: #e76f51;
+    text-align: center;
+}
+
+textarea {
+    display: block;
+    margin-top: -15px;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    margin: auto;
+
+}
